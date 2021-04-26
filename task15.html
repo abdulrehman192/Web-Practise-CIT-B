@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" width=100%>
+        <!--Table 1 Header Row-->
+        <tr>
+            <th colspan="5">
+                I am Table 1
+            </th>
+        </tr>
+        <tr>
+            <td>First</td>
+            <td>Second</td>
+            <td rowspan="2">
+                <!--Nested Table 2-->
+                <table border="1">
+                    <tr>
+                        <th colspan="2">I am Table 2</th>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td>Pakistan</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Hello</td>
+        </tr>
+        <tr>
+            <td>Third</td>
+            <td>Forth</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Fifth</td>
+            <td>Sixth</td>
+            <td>BLANK</td>
+            <td rowspan="2">I am merged cell</td>
+        </tr>
+        <tr>
+            <td>Seventh</td>
+            <td>Eight</td>
+            <td>BLANK</td>
+        </tr>
+    </table>
+</body>
+
+</html>
