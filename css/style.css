@@ -1,0 +1,44 @@
+* {
+    padding: 5px;
+    margin: 5px;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+#header {
+    height: 50px;
+    border: solid 1px black;
+    background-color: aqua;
+    width: 100%;
+    display: block;
+}
+
+#navbar {
+    display: block;
+    border: solid 1px red;
+    height: 30px;
+    width: 100%;
+    background-color: coral;
+}
+
+#container {
+    border: solid 1px green;
+    width: 100%;
+    height: 600px;
+}
+
+#footer {
+    border: solid 1px purple;
+    height: 30px;
+    width: 100%;
+    background-color: yellowgreen;
+}
+
+#logo {
+    display: block;
+    height: 30px;
+    width: 30px;
+    border: solid 1px black;
+}
