@@ -12,7 +12,7 @@ body {
     /* background-color: rgba(192, 192, 108, .5); */
     /* background-color: hsl(23, 81%, 65%); */
     /* ss */
-    background-image: url('images/3.jpg');
+    background-image: url('../images/3.jpg');
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 100%;
