@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Header */
+
+header nav {
+    width: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+}
+
+.aw-navigation {
+    margin: 0;
+    padding: 0;
+}
+
+.aw-navigation li a {
+    display: block;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.aw-logo {
+    display: block;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 26px;
+    line-height: 60px;
+    text-align: center;
+    border: solid 2px white;
+    border-radius: 100%;
+}
