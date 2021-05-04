@@ -6,6 +6,10 @@ p {
     font: 25px sans-serif bold;
 }
 
+p:hover {
+    color: white;
+}
+
 body {
     background-color: bisque;
     /* background-color: rgb(192, 192, 108); */
