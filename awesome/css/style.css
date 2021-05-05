@@ -8,35 +8,160 @@ a {
     text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+h1 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+h3 {
+    width: 100%;
+    margin-top: 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+h3:first-letter {
+    color: #dca453;
+}
+
+.aw-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.aw-align-center {
+    align-items: center;
+}
+
 
 /* Header */
 
-header nav {
-    width: 100%;
-    position: fixed;
-    background: rgba(0, 0, 0, .5);
+header {
+    position: relative;
 }
 
-.aw-navigation {
+header nav {
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 999;
+}
+
+header nav ul.aw-navigation {
+    display: flex;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.aw-navigation li a {
+header nav ul.aw-navigation li a {
     display: block;
-    color: white;
+    padding: 0 16px;
+    color: #fff;
     font-size: 16px;
     text-transform: uppercase;
 }
 
-.aw-logo {
+header nav ul.aw-navigation li:last-child a {
+    padding-right: 0;
+}
+
+header nav ul.aw-navigation li a:after {
+    content: '';
     display: block;
+    height: 1px;
+    width: 0;
+    background-color: #fff;
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+header nav ul.aw-navigation li a:hover:after {
+    width: 100%;
+    opacity: 1;
+}
+
+.aw-header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+.aw-main-banner {
+    display: block;
+    width: 100%;
+}
+
+.aw-header-text .aw-arrow {
+    display: inline-block;
+    padding: 20px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    cursor: pointer;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+}
+
+.aw-header-text .aw-arrow:hover {
+    opacity: .7;
+}
+
+
+/* Logo */
+
+.aw-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60px;
     height: 60px;
-    color: white;
+    color: #fff;
     font-size: 26px;
-    line-height: 60px;
-    text-align: center;
-    border: solid 2px white;
+    border: solid 2px #fff;
     border-radius: 100%;
+}
+
+
+/* Sections */
+
+.aw-section {
+    padding: 85px 0;
+}
+
+
+/* About us */
+
+#aw-about .aw-column {
+    width: 48%;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#aw-about i {
+    font-size: 45px;
+    color: #dca453;
 }
