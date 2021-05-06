@@ -1,71 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Awesome website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Link external css file-->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Awesome Website</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-    <!--Website Header-->
+
+    <!-- Website Header -->
     <header>
+
+        <!-- Main Navigation -->
         <nav>
-            <!--Header Logo-->
             <div class="aw-container aw-align-center">
                 <a class="aw-logo" href="#">Aw!</a>
                 <ul class="aw-navigation">
                     <li><a href="#">Home</a></li>
                     <li><a href="#aw-about">About Us</a></li>
-                    <li><a href="#">Gellery</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#aw-gallery">Gallery</a></li>
+                    <li><a href="#aw-testimonials">Testimonials</a></li>
+                    <li><a href="#aw-contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
 
-        <!--Header Content-->
+        <!-- Header Content -->
         <section class="aw-header-content">
             <div class="aw-header-text">
-                <h1>I'm Awesome!</h1>
+                <h1 class="aw-pulsate">I'm Awesome!</h1>
+                <i class="aw-arrow"></i>
             </div>
-            <img class="aw-main-banner" src="images/banner.jpg" alt="Awesome website main banner">
+            <img class="aw-main-banner" src="images/banner.jpg" alt="Awesome main banner" />
         </section>
+
     </header>
-    <!--Main Section of Website-->
+
+    <!-- Main Content -->
     <section>
-        <!--About US-->
-        <section id="aw-about" class="aw-section aw-container">
-            <h3>About Us</h3>
+
+        <!-- About us -->
+        <section id="aw-about" class="aw-container aw-section">
+
+            <h3>About us</h3>
+
             <div class="aw-column">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin, augue sit amet volutpat convallis, diam neque bibendum tortor, ut commodo diam sem et eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+                <i class="icon-trophy"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin, augue sit amet volutpat convallis, diam neque bibendum tortor, ut commodo diam sem et eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
+
             <div class="aw-column">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin, augue sit amet volutpat convallis, diam neque bibendum tortor, ut commodo diam sem et eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+                <i class="icon-leaf"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin, augue sit amet volutpat convallis, diam neque bibendum tortor, ut commodo diam sem et eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
+
             <div class="aw-column">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin, augue sit amet volutpat convallis, diam neque bibendum tortor, ut commodo diam sem et eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+                <i class="icon-rocket"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin, augue sit amet volutpat convallis, diam neque bibendum tortor, ut commodo diam sem et eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
+
             <div class="aw-column">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin, augue sit amet volutpat convallis, diam neque bibendum tortor, ut commodo diam sem et eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+                <i class="icon-briefcase"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin, augue sit amet volutpat convallis, diam neque bibendum tortor, ut commodo diam sem et eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
+
         </section>
+
+        <!--Contact Us Form-->
+        <section id="aw-contact" class="aw-container aw-section">
+            <form action="#" method="get">
+                <label for="firstname">First Name :</label>
+                <input type="text" name="firstname" id="" placeholder="Please Enter First Name"> <br>
+                <label for="lastname">Last Name :</label>
+                <input type="text" name="lastname" placeholder="Enter your last name"> <br>
+                <label for="email">Email :</label>
+                <input type="email" name="email" placeholder="Enter Email Address"> <br>
+                <label for="message">Message :</label>
+                <textarea name="message" cols="30" rows="10" placeholder="Enter Message Here"></textarea> <br>
+                <input type="submit" value="Submit" id="submitbtn">
+            </form>
+        </section>
+
     </section>
 
-    <!--Website Footer-->
+    <!-- Website Footer -->
     <footer>
-
+        <div class="aw-container aw-align-center">
+            <a class="aw-logo" href="#">Aw!</a>
+        </div>
     </footer>
 </body>
 
