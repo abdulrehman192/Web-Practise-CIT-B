@@ -172,6 +172,11 @@ header nav ul.aw-navigation li a:hover:after {
     color: #dca453;
 }
 
+#aw-contact {
+    display: block;
+    background-color: rgb(223, 223, 223);
+}
+
 #aw-contact form {
     display: flex;
     flex-direction: column;
@@ -202,4 +207,30 @@ textarea {
     border-radius: 20px;
     outline: none;
     font-weight: bold;
+}
+
+footer {
+    padding: 10px 0;
+    background-color: #444;
+}
+
+footer .aw-logo {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+}
+
+footer .aw-social-icons {
+    display: flex;
+    list-style-type: none;
+}
+
+footer .aw-social-icons li {
+    margin-left: 15px;
+}
+
+footer .aw-social-icons li a {
+    color: white;
+    display: flex;
+    font-size: 22px;
 }
