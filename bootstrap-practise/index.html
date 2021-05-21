@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to Bootstrap 5</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
@@ -131,11 +132,69 @@
         </div>
 
 
-        <div class="alert alert-success alert-dismissible" role="alert">Success! This alert will fade away when clicking the × button.</div>
+        <div class="alert alert-success alert-dismissible show fade" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> Success! This alert will fade away when clicking the × button.</div>
 
         <br>
         <h1>Heading 1 <span class="badge badge-primary">Primary</span></h1>
         <button type="button" class="btn btn-secondary">Notifications <span class="badge badge-light">10</span></button>
+        <br><br>
+        <nav class="breadcrumb bread">
+            <a href="#" class="breadcrumb-item">Home</a>
+            <a href="#" class="breadcrumb-item">Supports</a>
+            <a href="#" class="breadcrumb-item">Supports</a>
+            <span class="breadcrumb-item active">Player</span>
+        </nav>
+        <br><br>
+        <ol class="breadcrumb bread">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Supports</a></li>
+            <li class="breadcrumb-item"><a href="#">Supports</a></li>
+            <li class="breadcrumb-item active"><span>Player</span></li>
+        </ol>
+
+        <br><br>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+        <br><br>
+
+        <button type="button" class="btn btn-success btn-block">Success Block Button</button>
+        <button type="button" class="btn btn-warning btn-block btn-lg">Warning Block Button</button>
+        <br><br>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary">
+                <input type="checkbox" name="chk1" id=""> checkbox 1
+            </label>
+            <label class="btn btn-primary active">
+                <input type="checkbox" name="chk1" id=""> checkbox 2
+            </label>
+            <label class="btn btn-primary ">
+                <input type="checkbox" name="chk1" id=""> checkbox 3
+        </div>
+        <br><br>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-warning">
+                <input type="radio" name="chk1" id=""> radio 1
+            </label>
+            <label class="btn btn-warning active">
+                <input type="radio" name="chk1" id=""> radio 2
+            </label>
+            <label class="btn btn-warning ">
+                <input type="radio" name="chk1" id=""> radio 3
+        </div>
+<br><br>
+<div class="jumbotron">
+    <h1>Normal jumbotron!</h1>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum.</p>
+    <a href="#" class="btn btn-primary">Read More</a>
+</div>
 
     </div>
     <!-- first jquery, popper.js and lastly bootstrap.js -->

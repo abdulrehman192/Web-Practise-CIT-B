@@ -1,0 +1,22 @@
+.badge-light {
+    background-color: white;
+    padding: 3px;
+    color: black;
+}
+
+.bread {
+    background-color: rgb(219, 217, 217);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn-block {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.jumbotron {
+    background-color: rgb(219, 217, 217);
+    padding: 15px;
+    border-radius: 5px;
+}
