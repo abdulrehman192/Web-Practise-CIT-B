@@ -218,15 +218,216 @@
 <div class="dropdown">
     <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">dropdown</button>
     <div class="dropdown-menu" aria-labelledby="dropdown">
-<a href="#" class="dropdown-item">Item 1</a>
+        <a href="#" class="dropdown-item">Item 1</a>
+        <a href="#" class="dropdown-item">Item 2</a>
+        <a href="#" class="dropdown-item">Item 3</a>
+        <a href="#" class="dropdown-item">Item 4</a>
     </div>
 </div>
-    </div>
-    <br><br>
-    <!-- first jquery, popper.js and lastly bootstrap.js -->
-    <script src="js/jquery.js" type="text/javascript"></script>
+<br><br>
+<h1>Collapse</h1>
+<a href="#hrefcollapse" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="hrefcollapse">Link with href</a>
+<div id="hrefcollapse" class="collapse">
+<div class="alert alert-primary">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.
+</div>
+</div>
+<br><br>
+<button type="button" data-target="#buttoncollapse" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="buttoncollapse">Button with data target</button>
+<div id="buttoncollapse" class="collapse">
+<div class="alert alert-primary">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.
+</div>
+</div>
 
-    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+<br><br>
+<h1>Navbars</h1>
+<div class="navbar navbar-expand-md navbar-light bg-light">
+<a href="#" class="navbar-brand">Navbar</a>
+<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbaritems" 
+aria-expanded="false" aria-controls="navbaritems" >
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbaritems">
+<div class="navbar-nav">
+    <a href="#" class="nav-item nav-link active">Home</a>
+    <a href="#" class="nav-item nav-link ">News</a>
+    <a href="#" class="nav-item nav-link ">About</a>
+    <a href="#" class="nav-item nav-link ">Contact Us</a>
+</div>
+</div>
+</div>
+
+<br><br>
+<h1>Nav With Tabs</h1>
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a href="#hometab" id="home-tab" class="nav-link active" data-toggle="tab" role="tab" 
+                aria-controls="hometab" aria-expanded="true" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#profiletab" id="profile-tab" class="nav-link" data-toggle="tab" role="tab" 
+                aria-controls="profiletab" aria-expanded="false" aria-selected="false">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a href="#messagetab" id="message-tab" class="nav-link" data-toggle="tab" role="tab" 
+                aria-controls="messagetab" aria-expanded="false" aria-selected="false">Messages</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane " id="hometab" role="tabpanel" aria-labelledby="home-tab" aria-expanded="true">
+                <p>
+                    Home: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit. Ut sagittis maximus maximus. In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia metus viverra, scelerisque enim sed, sollicitudin magna. Sed non augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget tortor ultricies pulvinar. Praesent euismod ut lorem sit amet bibendum.
+                </p>
+            </div>
+            <div class="tab-pane active" id="profiletab" role="tabpanel" aria-labelledby="profile-tab" aria-expanded="false">
+                <p>
+                    Profile: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit. Ut sagittis maximus maximus. In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia metus viverra, scelerisque enim sed, sollicitudin magna. Sed non augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget tortor ultricies pulvinar. Praesent euismod ut lorem sit amet bibendum.
+                </p>
+            </div>
+            <div class="tab-pane " id="messagetab" role="tabpanel" aria-labelledby="message-tab" aria-expanded="false">
+                <p>
+                    Messages: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit. Ut sagittis maximus maximus. In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia metus viverra, scelerisque enim sed, sollicitudin magna. Sed non augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget tortor ultricies pulvinar. Praesent euismod ut lorem sit amet bibendum.
+                </p>
+            </div>
+        </div>
+        <br><br>
+        <h1>Nav With Pills</h1>
+        <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item">
+                <a href="#homepill" id="home-pill" class="nav-link active" data-toggle="pill" role="tab" 
+                aria-controls="homepill" aria-expanded="true" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#profilepill" id="profile-pill" class="nav-link" data-toggle="pill" role="tab" 
+                aria-controls="profilepill" aria-expanded="false" aria-selected="false">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a href="#messagepill" id="message-pill" class="nav-link" data-toggle="pill" role="tab" 
+                aria-controls="messagepill" aria-expanded="false" aria-selected="false">Messages</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="homepill" role="tabpanel" aria-labelledby="home-pill" aria-expanded="true">
+                <p>
+                    Home: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit. Ut sagittis maximus maximus. In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia metus viverra, scelerisque enim sed, sollicitudin magna. Sed non augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget tortor ultricies pulvinar. Praesent euismod ut lorem sit amet bibendum.
+                </p>
+            </div>
+            <div class="tab-pane " id="profilepill" role="tabpanel" aria-labelledby="profile-pill" aria-expanded="false">
+                <p>
+                    Profile: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit. Ut sagittis maximus maximus. In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia metus viverra, scelerisque enim sed, sollicitudin magna. Sed non augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget tortor ultricies pulvinar. Praesent euismod ut lorem sit amet bibendum.
+                </p>
+            </div>
+            <div class="tab-pane" id="messagepill" role="tabpanel" aria-labelledby="message-pill" aria-expanded="false">
+                <p>
+                    Messages: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit. Ut sagittis maximus maximus. In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia metus viverra, scelerisque enim sed, sollicitudin magna. Sed non augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget tortor ultricies pulvinar. Praesent euismod ut lorem sit amet bibendum.
+                </p>
+            </div>
+        </div>
+        <br><br>
+        <h1>Forms</h1>
+        <div class="form-group">
+            <label for="text-example">Text</label>
+            <input type="text" class="form-control" id="text-example" placeholder="Enter Text Here">
+        </div>
+        <div class="form-group">
+            <label for="email-example">Email</label>
+            <input type="email" class="form-control" id="email-example" placeholder="example@email.com">
+        </div>
+        <div class="form-group">
+            <label for="password-example">Password</label>
+            <input type="password" class="form-control" id="password-example" placeholder="Enter password Here">
+        </div>
+        <div class="form-group">
+            <label for="number-example">Number</label>
+            <input type="number" class="form-control" id="number-example" placeholder="123">
+        </div>
+        <div class="form-group">
+            <label for="datetime-example">Date and Time</label>
+            <input type="datetime-local" class="form-control" id="datetime-example">
+        </div>
+        <div class="form-group">
+            <label for="date-example">Date</label>
+            <input type="date" class="form-control" id="date-example">
+        </div>
+        <div class="form-group">
+            <label for="time-example">Time</label>
+            <input type="time" class="form-control" id="time-example">
+        </div>
+        <div class="form-group">
+            <label for="color-example">Color</label>
+            <input type="color" class="form-control" id="color-example">
+        </div>
+
+        <div class="form-group">
+            <label for="selectoption">Select</label>
+            <select class="form-control" id="selectoption">
+                <option value="option1" selected>Option 1</option>
+                <option value="option2" >Option 2</option>
+                <option value="option3" >Option 3</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="file-example">File</label>
+            <input type="file" class="form-control" id="file-example">
+        </div>
+        <h4>CheckBox</h4>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkbox-example">
+            <label for="checkbox-example">CheckBox 1</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkbox-example">
+            <label for="checkbox-example">CheckBox 2</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkbox-example">
+            <label for="checkbox-example">CheckBox 3</label>
+        </div>
+        <h4>Radio</h4>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio-example" name="radios">
+            <label for="radio-example">Radio 1</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio-example" name="radios">
+            <label for="radio-example">Radio 2</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio-example" name="radios">
+            <label for="radio-example">Radio 3</label>
+        </div>
+
+        <div class="form-group">
+            <label for="range-example">Color</label>
+            <input type="range" class="form-control" id="range-example" value="30">
+        </div>
+        <h2>Input Groups</h2>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="prepend-1">#</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Enter text Here" aria-label="hashtag" aria-labelledby="prepend-1">
+        </div>
+        <br>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Enter Text Here" aria-labelledby="append-1">
+            <div class="input-group-append" id="append-1">
+                <span class="input-group-text">Text</span>
+            </div>
+        </div>
+        <br>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Enter Text Here To Search" aria-labelledby="search-1">
+            <div class="input-group-append">
+                <button type="button" class="btn btn-secondary">Search</button>
+            </div>
+        </div>
+        <br><br>
+        <!-- first jquery, popper.js and lastly bootstrap.js -->
+        <script src="js/jquery.js" type="text/javascript"></script>
+
+        <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
 </body>
 
 </html>
